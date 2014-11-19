@@ -1,1 +1,1 @@
-web: target/start/play-scala-app
+target/start -Dhttp.port=${PORT} ${JAVA_OPTS}"
