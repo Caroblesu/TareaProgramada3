@@ -6,6 +6,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.10.1"
 
+herokuAppName in Compile := "still-brook-9566"
+
 libraryDependencies ++= Seq(
   jdbc,
   anorm,
