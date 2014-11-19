@@ -1,8 +1,9 @@
 package models
 
-/**
- * Created by carol on 09/11/14.
- */
-object DB {
+import sorm._
 
-}
+/**
+ * Created by caro
+ */
+
+object DB extends Instance(entities = Seq(Entity[Person]()), url = "jdbc:h2:mem:test")
